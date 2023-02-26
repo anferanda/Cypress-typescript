@@ -20,3 +20,15 @@ it('Test Sauce Demo Sauce labs product backpack', () => {
     loginPage.assertLogin()
     dashboardPage.sauceLabsBackpack() 
 })
+
+it('Filter product from low to high', () => {
+    loginPage.login(URL,'standard_user','secret_sauce')
+    loginPage.assertLogin()
+    dashboardPage.saucelabfilter()
+})
+
+it('Add to cart', () => {
+    loginPage.login(URL,'standard_user','secret_sauce')
+    loginPage.assertLogin()
+    dashboardPage.saucelabaddtocart()
+})

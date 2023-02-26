@@ -1,0 +1,172 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 5,
+    "passes": 3,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-02-26T15:41:15.577Z",
+    "end": "2023-02-26T15:41:31.852Z",
+    "duration": 16275,
+    "testsRegistered": 5,
+    "passPercent": 60,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dfd3ffe0-5793-4b9f-a7cd-826769369bcf",
+      "title": "",
+      "fullFile": "cypress/integration/login.ts",
+      "file": "cypress/integration/login.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Test LOGIN",
+          "fullTitle": "Test LOGIN",
+          "timedOut": null,
+          "duration": 4488,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();",
+          "err": {},
+          "uuid": "3d030ba9-e9a1-4478-bbc2-516575a958de",
+          "parentUUID": "dfd3ffe0-5793-4b9f-a7cd-826769369bcf",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Test Sauce Demo Invalid Password",
+          "fullTitle": "Test Sauce Demo Invalid Password",
+          "timedOut": null,
+          "duration": 1584,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, 'standard_user', 'invalidPass');\nloginPage.assertLoginFail();",
+          "err": {},
+          "uuid": "dddcc60e-5997-4ece-ac7d-71290c17ae4b",
+          "parentUUID": "dfd3ffe0-5793-4b9f-a7cd-826769369bcf",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Test Sauce Demo Sauce labs product backpack",
+          "fullTitle": "Test Sauce Demo Sauce labs product backpack",
+          "timedOut": null,
+          "duration": 2058,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();\ndashboardPage.sauceLabsBackpack();",
+          "err": {},
+          "uuid": "617edde9-31fc-462b-8e04-8ec27db455fe",
+          "parentUUID": "dfd3ffe0-5793-4b9f-a7cd-826769369bcf",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Filter product from low to high",
+          "fullTitle": "Filter product from low to high",
+          "timedOut": null,
+          "duration": 2318,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();\ndashboardPage.saucelabfilter();",
+          "err": {
+            "message": "CypressError: `cy.select()` can only be called on a single `<select>`. Your subject contained 2 elements.\n\nhttps://on.cypress.io/select",
+            "estack": "CypressError: `cy.select()` can only be called on a single `<select>`. Your subject contained 2 elements.\n\nhttps://on.cypress.io/select\n    at Context.select (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:153654:78)\n    at Context.<anonymous> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:173267:19)\nFrom Your Spec Code:\n    at DashboardPage.saucelabfilter (https://www.saucedemo.com/__cypress/tests?p=cypress\\integration\\login.ts:153:29)\n    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\integration\\login.ts:120:19)",
+            "diff": null
+          },
+          "uuid": "c8f2abc7-e9f7-46fd-b816-2bd0d126cb0d",
+          "parentUUID": "dfd3ffe0-5793-4b9f-a7cd-826769369bcf",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Add to cart",
+          "fullTitle": "Add to cart",
+          "timedOut": null,
+          "duration": 553,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();\ndashboardPage.addtocart();",
+          "err": {
+            "message": "TypeError: dashboardPage.addtocart is not a function",
+            "estack": "TypeError: dashboardPage.addtocart is not a function\n    at Context.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\integration\\login.ts:125:19)",
+            "diff": null
+          },
+          "uuid": "5cff8bab-9080-4ae3-9d5d-456c8321efe5",
+          "parentUUID": "dfd3ffe0-5793-4b9f-a7cd-826769369bcf",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "3d030ba9-e9a1-4478-bbc2-516575a958de",
+        "dddcc60e-5997-4ece-ac7d-71290c17ae4b",
+        "617edde9-31fc-462b-8e04-8ec27db455fe"
+      ],
+      "failures": [
+        "c8f2abc7-e9f7-46fd-b816-2bd0d126cb0d",
+        "5cff8bab-9080-4ae3-9d5d-456c8321efe5"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 11001,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "chart": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
