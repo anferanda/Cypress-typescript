@@ -18,5 +18,8 @@ open cypress dashboard
 ```bash
 npx cypress open
 ```
+## Video Run Automation :
+
+https://user-images.githubusercontent.com/114634923/221422948-b82bbf5e-a1e0-4ccb-b7e3-a7b129addcaf.mp4
 
 ### Thanks
